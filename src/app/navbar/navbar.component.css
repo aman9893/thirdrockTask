@@ -1,0 +1,15 @@
+.navbar_desgin_custom{
+    background: #2e7fb8;
+    padding: 29px;
+    color: white;
+}
+.navbar_desgin_custom_brnd{
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+.navbar_desgin_custom_brnd:hover{
+    font-size: 25px;
+    color: rgb(233, 229, 221);
+    font-weight: bold;
+}

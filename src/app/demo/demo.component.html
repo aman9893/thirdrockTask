@@ -1,0 +1,31 @@
+<div class=" card_wrapper jumbotron bg-transparent text-center">
+  <div *ngIf="!user" class="card text-center">
+    <h6 class="card-header card_custom_header">
+      ThirdRock Login 
+    </h6>
+    <div class="card-block">
+      <p class="card-text card_custom_text">Sign in with <br>
+        <span class="google_text">Google</span> & <span  class="facebook_text">Facebook</span></p>
+    </div>
+    <div class="card-block">
+      <button class="btn btn-danger google_login" (click)="signInWithGoogle()">
+        <span class="fa fa-google"></span>
+      </button>
+      <button class="btn facebook_login " (click)="signInWithFB()"><span class="fa fa-facebook"></span></button>
+    </div>
+  </div>
+  <div *ngIf="user" class="card text-center">
+    <h6 class="card-header card_custom_header">
+      Welcome To ThirdRock
+    </h6>
+    <div class="card-block"></div>
+    <img class="img_custom" src="{{ user.photoUrl }}">
+    <div class="card-block">
+      <h4 class="card-title card_custom_text">{{ user.name }}</h4>
+      <p class="card-text card_custom_text">{{ user.email }}</p>
+    </div>
+    <div class="card-block">
+      <button class="btn btn-danger" (click)="signOut()">Log out</button>
+    </div>
+  </div>
+</div>

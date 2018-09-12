@@ -1,0 +1,63 @@
+.bg-transparent {
+  background-color: transparent;
+}
+
+:host {
+  height: 100%;
+}
+
+.photo {
+  object-fit: contain;
+}
+
+.card {
+  width: 20rem;
+  margin: 0 auto;
+}
+.card_custom_header{
+  padding: 47px;
+  background: #2e7fb8;
+  color: white;
+  font-size: 21px;
+}
+.card_custom_text{
+  padding: 8px;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #292b2ccc;
+}
+.google_login{
+  float: left;
+    width: 100%;
+    margin: 10px;
+    cursor: pointer;
+
+}
+.facebook_login{
+  float: left;
+  width: 100%;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  background: #025aa5bd;
+}
+.google_text{
+  color: #d9534f;
+  font-size: 21px;
+  font-weight: bold;
+
+}
+.facebook_text{
+  color: #4d85bd;
+  font-size: 21px;
+  font-weight: bold;
+}
+.img_custom{
+  height: 117px;
+  width: 117px;
+  text-align: center;
+  margin-left: 97px;
+  border-radius: 50%;
+  float: left;
+}
